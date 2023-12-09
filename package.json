@@ -4,9 +4,9 @@
   "description": "Simple Todo App express Connected to MongoDB Prisma",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "prisma:g": "npx prisma generate --schema=./src/schema/schema.prisma",
-    "db:p": "npx prisma db push --schema=./src/schema/schema.prisma"
+    "start:dev": "nodemon src/index.js",
+    "prisma:g": "npx prisma generate --schema=./src/prisma/schema.prisma",
+    "db:p": "npx prisma db push --schema=./src/prisma/schema.prisma"
   },
   "repository": {
     "type": "git",
