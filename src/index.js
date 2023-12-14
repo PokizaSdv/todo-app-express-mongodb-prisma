@@ -82,7 +82,7 @@ app.get("/tasks/:id", async (req, res) => {
     }
 });
 
-app.patch("tasks/:id", async (req, res) => {
+app.patch("/tasks/:id", async (req, res) => {
     const {
         params: { id },
         body: { status }
@@ -115,7 +115,7 @@ app.patch("tasks/:id", async (req, res) => {
     }
 });
 
-app.delete("tasks/:id", async (req, res) => {
+app.delete("/tasks/:id", async (req, res) => {
     const {
         params: { id }
     } = req;
